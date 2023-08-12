@@ -26,9 +26,9 @@ class MailController {
     const mailOptions = {
       from: GOOGLE_EMAIL,
       to: 'hugoabrahamv19@gmail.com',
-      subject: 'Email prueba 2',
+      subject: 'Email prueba 5',
       html: `
-        Prueba 11
+        Prueba 5
       `,
     };
     try {
