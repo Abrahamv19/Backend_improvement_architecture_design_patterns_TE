@@ -26,9 +26,9 @@ class MailController {
     const mailOptions = {
       from: GOOGLE_EMAIL,
       to: 'hugoabrahamv19@gmail.com',
-      subject: 'Email prueba 5',
+      subject: 'Email prueba 2',
       html: `
-        Prueba 5
+        Prueba 11
       `,
     };
     try {
@@ -55,7 +55,7 @@ export const mailController = new MailController();
 //         const messageOptions = {
 //         body: 'sms de prueba',
 //         from: TWILIO_PHONE_NUMBER,
-//         to: '+573113900587',
+//         to: '+', //Agrego telefono para recibir mensaje
 //         };
 //     try {
 //         const result = await this.client.messages.create(messageOptions);

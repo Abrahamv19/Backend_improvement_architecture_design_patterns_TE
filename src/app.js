@@ -11,7 +11,7 @@ import productsRouter from "./routes/products.routes.js";
 import cartsRouter from "./routes/carts.routes.js";
 import chatRouter from "./routes/chat.routes.js"
 import sessionsRouter from "./routes/sessions.routes.js";
-// import mockRouter from './routes/mock.routes.js';
+import mockRouter from './routes/mock.routes.js';
 import messageandmailRouter from './routes/messageandmail.routes.js'
 import websockets from "./config/sockets.config.js";
 import { connectMongo } from "./config/configMongoDB.js";
@@ -84,7 +84,7 @@ app.use("/chat", chatRouter);
 app.use('/carts', cartsRouter);
 app.use("/auth/profile", sessionsRouter);
 app.use("/", messageandmailRouter);
-
+app.use('/', mockRouter);
 /*-------END POINTS-------*/
 app.use('/api/products', productsRouter);
 app.use('/api/carts', cartsRouter);
